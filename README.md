@@ -51,9 +51,8 @@ The repository keeps the backend implementations physically separate while organ
 │   ├── alembic/
 │   └── app/
 │       ├── core/
-│       └── modules/
-│           ├── accounts/
-│           └── scrumban/
+│       ├── accounts/
+│       └── scrumban/
 │
 ├── frontend/
 ├── postgres/
@@ -67,7 +66,7 @@ The Django backend uses Django's application-oriented structure. Domain function
 
 ### FastAPI
 
-The FastAPI backend separates application-wide concerns into `core/` and domain functionality into feature-oriented modules under `modules/`.
+The FastAPI backend separates application-wide concerns into `core/` and domain functionality into feature-oriented apps under `accounts/` and `scrumban/`.
 
 The structures are intentionally **conceptually parallel without being identical**. Equivalent concerns should be easy to locate between the two backends, but each implementation follows the conventions of its framework rather than imitating the other.
 
